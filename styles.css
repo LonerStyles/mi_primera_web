@@ -1,0 +1,263 @@
+ol, ul
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+div.nav-text
+{
+    display: flex;       
+    margin-right: 350px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    color:white;    
+}
+
+header
+{        
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgb(126, 14, 14);           
+    align-items: center;
+    justify-content: space-between;
+    border: 10px solid rgb(126, 14, 14);
+    z-index: 1000;    
+} 
+
+header nav ul
+{
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    display: flex;
+    gap: 1cm;    
+}
+
+header div.logo1
+{
+    color :rgb(216, 107, 17);
+    font-size: 0.8cm;
+}
+
+header nav ul a
+{
+    color: white;
+}
+
+.img-carrusel img
+{
+    width: 100%;
+}
+
+.seccion1
+{  
+    height: 450px;
+    display: flex;
+    margin: 50px;    
+    justify-content: center;
+    align-items: center;
+
+    .parrafo1
+    {   
+        color: rgb(202, 99, 31);
+        position: relative;        
+        right: 50px;
+        padding: 5px;
+        text-align: end;
+        font-family:"Roboto", "sans-serif";
+        font-weight: 500;            
+        font-size: 25px;
+    }
+    .parrafo2
+    {
+        position: relative;
+        left: 33px;
+        width: 500px;
+        padding:  50px;
+        text-align: end;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: 400;
+        font-size: 19px;        
+    }
+    
+    
+    .acerca-imagen img
+    {
+        width: 50%;    
+        max-width: 50%;
+    }
+    
+}
+
+footer
+{   
+    height: 200px;
+    background-color: rgb(39, 38, 38);
+    position: absolute;
+    left: 0px;
+    width: 100%;    
+
+    .titulo-footer
+    {
+        position: relative;
+        top: 25px;
+        left: 25px;
+        font-size: 25px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(202, 99, 31);;
+    }
+    .footer-contacto
+    {
+        li 
+        {
+            margin-bottom: 8px;
+        }        
+        position: relative;
+        top: 30px;
+        right: 5px;
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 15px;
+    }
+}
+.checkbtn
+{    
+    font-size: 22px;
+    color: white;
+    float: right;
+    margin-right: 15px;
+    margin-left: 25px;
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+}
+
+.navbar
+{   
+    height: 0vh;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 100%;
+    background-color: rgb(59, 59, 59);
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 1000;
+    overflow: hidden;    
+}
+
+.navbar ul.menu {
+    float: none;
+    display: block;
+    width: 174px;
+    margin: 0 auto;    
+}
+
+.navbar ul li
+{
+    display: block;
+    font-size: 32px;    
+    margin-bottom: 70px;
+    line-height: 100px;
+    position: relative;
+    top: 30px;
+}
+
+.navbar.active {
+    height: 100vh;    
+}
+
+.card-title
+{
+    display: block;
+    margin-top: 65px;
+    margin-bottom: 65px;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(212, 125, 11);
+    margin-left: 25px;
+}
+
+.card-imgs
+{
+    display: flex;  
+    flex-direction: row;    
+    justify-content: center;
+    justify-content: space-around;            
+
+    img
+    {
+        border-radius: 10px;
+        width: 20%;
+        margin-bottom: 25px;                    
+    }
+}
+
+.card-subtitles
+{
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    margin-bottom: -20px;
+    
+    p
+    {
+        position: relative;
+        right: 130px;
+    }
+}
+
+.card-texts
+{
+    display: flex;
+    font-size: 20px;
+    font-family: "Roboto";
+    justify-content: space-around;    
+    p
+    {
+        text-align: start;
+        width: 20%;
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 768px) 
+{
+    .seccion1
+    {
+        margin-top: 150px;        
+        flex-direction: column;
+        .parrafo1
+        {            
+            top: 50px;
+            left: 7px;           
+        }
+        .parrafo2
+        {
+            top: 25px;
+            text-align: justify;
+        }
+        .acerca-imagen
+        {
+            position: relative;
+            left: 120px;
+            margin-bottom: 150px;
+        }            
+
+    }
+    header nav ul
+    {
+        display: none;
+    }
+    .navbar ul li
+    {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+}
