@@ -227,16 +227,6 @@ footer
     }
 }
 
-.greeting
-{
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: orange;
-    margin-bottom: 50px;
-}
-
 @media (max-width: 768px) 
 {
     .seccion1
