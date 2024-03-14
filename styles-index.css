@@ -32,11 +32,20 @@ header
 
 header nav ul
 {
-    font-family:'Times New Roman', Times, serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
     display: flex;
     gap: 1cm;    
 }
+
+#acerca-nav
+{   
+    width: 300%;
+    position: relative;
+    right: 173px;
+    word-spacing: 8px;
+    
+} 
 
 header div.logo1
 {
@@ -169,15 +178,6 @@ footer
     position: relative;
     top: 30px;
 }
-
-#acerca-nav
-{   
-    width: 300%;
-    position: relative;
-    right: 173px;
-    word-spacing: 8px;
-    
-} 
 
 .navbar.active {
     height: 100vh;    

@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<script defer src="script.js"></script>
+<script defer src="script-contact.js"></script>
 </head>
 <body>
     <div>
@@ -26,21 +26,47 @@
               </label>
             <nav class = "navbar">                                        
                 <ul class = "menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li id="acerca-nav">Acerca de mi</li>
-                    <li>Trabajos</li>
-                    <li>Servicios</li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li id="acerca-nav">ACERCA DE MI</li>
+                    <li>TRABAJOS</li>
+                    <li>SERVICIOS</li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
                 </ul>
             </nav>    
-        </header>
+        </header>        
 
         <main>
-            
-
+            <p id="contact-title">Contacto</p>
+            <p id="contact-desc">Contacta conmigo mediante correo electronico y realiza cualquier consulta</p>
+            <div id="form1">
+            <form action="" method="get" class="formulario" id="form">
+                <div class="form-row">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" />
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      placeholder="yo@gmail.com"
+                      required
+                    />
+                </div>
+                <div class="form-row">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+                </div>
+                <div class="form-row">                    
+                    <button>Enviar</button>
+                  </div>
+                <p class = "alertas" id = "alertas"></p>
+            </form>
+            </div>            
         </main>
 
-        <footer>
+        <footer>            
             <h3 class = "titulo-footer">
                 Contacto
             </h3>
@@ -49,8 +75,7 @@
                 <li>Instagram</li>
                 <li>Facebook</li>                
             </ul>
-        </footer>
-
+        </footer>        
     </div>
 </body>
 </html>

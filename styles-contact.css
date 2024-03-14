@@ -32,11 +32,20 @@ header
 
 header nav ul
 {
-    font-family:'Times New Roman', Times, serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
     display: flex;
     gap: 1cm;    
 }
+
+#acerca-nav
+{   
+    width: 300%;
+    position: relative;
+    right: 173px;
+    word-spacing: 8px;
+    
+} 
 
 header div.logo1
 {
@@ -50,38 +59,6 @@ header nav ul a
 }
 
 
-footer
-{   
-    height: 200px;
-    background-color: rgb(39, 38, 38);
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    width: 100%;    
-
-    .titulo-footer
-    {
-        position: relative;
-        top: 25px;
-        left: 25px;
-        font-size: 25px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: rgb(202, 99, 31);;
-    }
-    .footer-contacto
-    {
-        li 
-        {
-            margin-bottom: 8px;
-        }        
-        position: relative;
-        top: 30px;
-        right: 5px;
-        color: white;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 15px;
-    }
-}
 .checkbtn
 {    
     font-size: 22px;
@@ -129,7 +106,146 @@ footer
     height: 100vh;    
 }
 
+#contact-title
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    color: orange;
+    font-size: 60px;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 50px;        
+}
 
+#contact-desc
+{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 25px;
+    margin-bottom: 55px;
+}
+
+#form1
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 5px;    
+    padding: 50px;
+    margin-left: 220px;
+    margin-bottom: 80px;
+    width: 70%;
+}
+
+.form-row {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    right: 248px;
+    width: 320%;
+}
+  
+.form-row input[type="text"] 
+{
+    background-color: #bdbdbd;
+    border: 0px;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;     
+}
+
+.form-row input[type="email"]
+{
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+  
+  .form-row label
+{
+    margin-bottom: 8px;    
+}
+
+.form-row textarea 
+{   
+    resize: none;
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    min-height: 150px;
+    margin-bottom: 50px;
+    width: 100%;        
+}
+
+.form-row button 
+{       
+    font-size: 16px;
+    font-weight: bold;    
+  
+    color: #ffffff;
+    background-color: #5995da;
+  
+    border: none;
+    border-radius: 3px;  
+  
+    padding: 10px 40px;
+    cursor: pointer;     
+    margin: auto;
+}  
+  
+.form-row button:hover
+{
+    background-color: #76aeed;
+}  
+  
+.form-row button:active 
+{
+    background-color: #407fc7;
+}
+
+footer
+{   
+    height: 200px;
+    background-color: rgb(39, 38, 38);
+    position: absolute;
+    left: 0px;    
+    width: 100%;    
+
+    .titulo-footer
+    {
+        position: relative;
+        top: 25px;
+        left: 25px;
+        font-size: 25px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(202, 99, 31);;
+    }
+    .footer-contacto
+    {
+        li 
+        {
+            margin-bottom: 8px;
+        }        
+        position: relative;
+        top: 30px;
+        right: 5px;
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 15px;
+    }
+}
 
 @media (max-width: 768px) 
 {   
